@@ -1,0 +1,47 @@
+    <html>
+        <body>
+            
+        <script>
+        var numbergrade = prompt("What letter would you like to convert?");
+        var lettergrade;
+    if(numbergrade<= 65 && numbergrade>-1){
+        lettergrade = "F";
+    }
+    else if (numbergrade <=63 && numbergrade > 59) {
+        lettergrade = "D-";
+    }
+    else if(numbergrade<=66 && numbergrade >63){
+        lettergrade="D";
+    }
+    else if(numbergrade<=69 && numbergrade>66){
+        lettergrade="D+"
+    }
+    else if(numbergrade<=73 && numbergrade>69){
+        lettergrade ="C-";
+    }
+    else if(numbergrade<=76 && numbergrade>73){
+        lettergrade="C";
+    }
+    else if(numbergrade<=79 && numbergrade>76){
+        lettergrade="C+";
+    }
+    else if(numbergrade<=83 && numbergrade>79){
+        lettergrade = "B-";
+    }
+    else if(numbergrade<=86 && numbergrade>83){
+        lettergrade = "B";
+    }
+    else if(numbergrade<=89 && numbergrade>86){
+        lettergrade = "B+";
+    }
+    else if(numbergrade<=93 && numbergrade>89){
+        lettergrade = "A-";
+    }
+    else if(numbergrade<=100 && numbergrade>93){
+        lettergrade="A";
+    }
+    alert(lettergrade);
+    console.log(lettergrade);
+    </script>
+    </body>
+    </html>

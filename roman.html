@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+            var romannumber = prompt("What is the roman number you would like to convert?");
+            var convertednumber = 0;
+            for(var i = 0; i<romannumber.length;i++){
+                
+                 if(romannumber.charAt(i)== "I"){
+                     if(romannumber.charAt(i+1)=="V" || romannumber.charAt(i+1)=="X"){
+                    convertednumber-=1;
+                }
+                else{
+                    convertednumber+=1;
+                }
+                }
+                else if(romannumber.charAt(i) == "V"){
+                    convertednumber+=5;
+                }
+                else if(romannumber.charAt(i) == "X"){
+                    convertednumber+=10;
+                }
+                else if(romannumber.charAt(i) == "L"){
+                    convertednumber+=50;
+                }
+                else if(romannumber.charAt(i) == "C"){
+                    convertednumber+=100;
+                }
+                else if(romannumber.charAt(i) == "D"){
+                    convertednumber+=500;
+                }
+                else if(romannumber.charAt(i) == "M"){
+                    convertednumber+=1000;
+                }
+            }
+            alert("Your conversion number is "+ convertednumber);
+        </script>
+    </body>
+</html>
